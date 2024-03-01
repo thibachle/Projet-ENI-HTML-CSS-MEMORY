@@ -1,0 +1,54 @@
+:root{
+    --linear: linear-gradient(20deg, rgba(234,236,134,0.857) 0%, rgba(26,203,232,0.860) 100%);
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    background: var(--linear); 
+}
+main{
+    margin: 20px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+}
+h1, h2{
+    text-align: center;
+}
+.btn-enregist{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn{
+    background: var(--linear);
+    width: fit-content;
+}
+.imgProfil{
+    width: 10%;
+    display: block;
+    margin: 10px auto;
+    border: solid 1px rgb(26, 6, 212);
+    border-radius: 50%;
+}
+.images img{
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.taille{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.btn-enregist{
+    margin: 2rem;
+}
+
+@media only screen and (max-width: 600px){
+    .images img {
+        max-width: 100%;
+        height: auto;
+    }
+}

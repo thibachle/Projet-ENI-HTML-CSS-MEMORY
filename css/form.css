@@ -1,0 +1,68 @@
+:root{
+    --linear: linear-gradient(20deg, rgba(234,236,134,0.857) 0%, rgba(26,203,232,0.860) 100%);
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    padding: 50px;
+    background: var(--linear);
+}
+h1{
+    text-align: center;
+}
+.container{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+legend{
+    text-align: center;
+}
+.btn-submit{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    background: var(--linear);
+}
+.btn a{
+    text-decoration: none;
+    color: black
+}
+
+i{
+    position: absolute;
+    right: 0px;
+    height: 45px;
+    top: 5px;
+    line-height: 45px;
+    font-size: 25px;
+    width: 45px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#username-note, #mdp-note{
+    color: red;
+    font-size: small;
+}
+
+#password-strength{
+    margin: 20px;
+}
+.faible{
+    border-top: 5px  solid orange;
+    padding: 5px 30px;
+}
+.moyen{
+    border-top: 5px solid yellow;
+    padding: 5px 30px;
+}
+.fort{
+    border-top: 5px solid yellowgreen;
+    padding: 5px 30px;
+}
+
