@@ -56,6 +56,8 @@ function saveProfile(){
         tailleMemory: tailleMemory
     };
     localStorage.setItem('userData', JSON.stringify(userData));
-
+    
+    // Provide feedback to the user
+    alert('Votre informations ont été enregistrées dans localStorage!');
     window.location.href = 'jouer.html';
 }
