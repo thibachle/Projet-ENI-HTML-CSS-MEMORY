@@ -73,6 +73,19 @@ let listCards = [
 
 let cards;
 
+btnStartGame.addEventListener('click', function () {
+
+    level = Number(levelOptionEl.value);
+
+     startGameEl.style.display = 'none';
+    gameEl.style.display = 'flex';
+
+     renderCards(level);
+
+    interval = setInterval(updateTime, 1000);
+});
+
+
 // Inverse la position des éléments dans le tableau
 function shuffle(arr) {
     return arr.sort(function () {
@@ -207,17 +220,6 @@ function updateEndGame() {
     document.querySelector('.step-box p').innerText = `${step} steps`
 }
 
-btnStartGame.addEventListener('click', function () {
-
-    level = Number(levelOptionEl.value);
-
-     startGameEl.style.display = 'none';
-    gameEl.style.display = 'flex';
-
-     renderCards(level);
-
-    interval = setInterval(updateTime, 1000);
-});
 
 btnPlayAgain.addEventListener('click', function () {
     score = 0;
